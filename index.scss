@@ -1,3 +1,31 @@
 body {
-    background-color: black;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+}
+
+.drum-patterns {
+    display: inline-flex;
+    margin-top: 360px;
+}
+
+.key {
+    height: 120px;
+    width: 120px;
+    border-radius: 16px;
+    background-color: rgba(31, 31, 31, 0.384);
+    border: 2px solid rgb(117, 117, 117);
+    margin-right: 40px;
+    color: rgb(156, 156, 156);
+    font-size: 48px;
+    padding: 8px;
+    transform: scale(1);
+    span {
+        font-size: 16px;
+    }
+}
+
+.active {
+    border: 2px solid rgb(255, 137, 91);
+    transform: scale(.96);
+    background-color: transparent;
 }
