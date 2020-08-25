@@ -9,16 +9,16 @@ body {
 }
 
 .key {
-    height: 120px;
-    width: 120px;
-    border-radius: 16px;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
     background-color: rgba(31, 31, 31, 0.384);
     border: 2px solid rgb(117, 117, 117);
     margin-right: 40px;
     color: rgb(156, 156, 156);
     font-size: 48px;
     padding: 8px;
-    transform: scale(1);
+    transition: all .1;
     span {
         font-size: 16px;
     }
@@ -26,6 +26,6 @@ body {
 
 .active {
     border: 2px solid rgb(255, 137, 91);
-    transform: scale(.96);
-    background-color: transparent;
+    transform: scale(.95);
+    box-shadow: 0px 0px 10px rgb(255, 137, 91);
 }

@@ -11,24 +11,28 @@ body {
 }
 
 .key {
-  height: 120px;
-  width: 120px;
-  border-radius: 16px;
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
   background-color: rgba(31, 31, 31, 0.384);
   border: 2px solid #757575;
   margin-right: 40px;
-  text-align: center;
   color: #9c9c9c;
   font-size: 48px;
   padding: 8px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transition: all .1;
+  transition: all .1;
+}
+
+.key span {
+  font-size: 16px;
 }
 
 .active {
   border: 2px solid #ff895b;
-  -webkit-transform: scale(0.96);
-          transform: scale(0.96);
-  background-color: transparent;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: 0px 0px 10px #ff895b;
+          box-shadow: 0px 0px 10px #ff895b;
 }
 /*# sourceMappingURL=index.css.map */
