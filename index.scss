@@ -3,9 +3,56 @@ body {
     text-align: center;
 }
 
+// CLOCK
+.clock {
+    width: 120px;
+    height: 120px;
+    border: 4px solid rgb(255, 137, 91);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 1rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px rgb(255, 137, 91),
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+    width: 50%;
+    height: 3px;
+    border-radius: 4px;
+    background: rgb(117, 117, 117);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(.1, 2.7, .58, 1);
+    transition: all .05s;
+}
+
+.hour-hand {
+    width: 30%;
+    right: 50%;
+}
+
+.min-hand {
+    width: 42%;
+    right: 50%;
+}
+
+// DRUMKIT
 .drum-patterns {
     display: inline-flex;
-    margin-top: 360px;
+    margin-top: 160px;
 }
 
 .key {
