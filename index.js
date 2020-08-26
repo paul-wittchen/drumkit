@@ -34,3 +34,15 @@ window.addEventListener('keydown', (event) => {
         key.classList.remove('active')
     }, 150);
 });
+
+
+//CONTROLS
+
+const controls = document.querySelectorAll('.controls input');
+
+function handleUpdate() {
+    document.documentElement.style.setProperty(`--${this.name}`, this.value)
+};
+
+controls.forEach(control => control.addEventListener('change', handleUpdate));
+controls.forEach(control => control.addEventListener('mousemove', handleUpdate));
